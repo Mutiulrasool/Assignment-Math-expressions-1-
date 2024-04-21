@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Math Expressions</title>
+    <style>
+        body {
+            display: block;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            color: skyblue;
+        }
+
+        button {
+            width: 10%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Task:1 Adding value of variables and showing them on browser screen(Through Js)</h2>
+    <p id="task-1"></p>
+    <p id="task-2"></p>
+    <p id="task-3"></p>
+    <p id="task-4"></p>
+    <p id="task-5"></p>
+    <h2>Task 3 </h2>
+    <p id="task1-1"></p>
+    <p id="task1-2"></p>
+    <p id="task1-3"></p>
+    <p id="task1-4"></p>
+    <p id="task1-5"></p>
+    <p id="task1-6"></p>
+
+    <h2> Task 4 (Calculatring the ticket prices)</h2>
+    <p id="task-1.4"></p>
+
+    <h2> Task 5 Writing Table</h2>
+    <p id="tablep1"></p>
+    <p id="tablep2"></p>
+    <p id="tablep3"></p>
+    <p id="tablep4"></p>
+    <p id="tablep5"></p>
+    <p id="tablep6"></p>
+    <p id="tablep7"></p>
+    <p id="tablep8"></p>
+    <p id="tablep9"></p>
+    <p id="tablep10"></p>
+
+    <h2> Task 7 Code to calculate checkout payments</h2>
+    <p id="task-7.1"></p>
+    <p id="task-7.2"></p>
+    <p id="task-7.3"></p>
+    <p id="task-7.4"></p>
+    <p id="task-7.5"></p>
+    <p id="task-7.6"></p>
+
+    <!-- <h3> Second style of showing 7th Task</h3>
+<button onclick="prompt( 1)">Click me</button> -->
+    <h2> Task 8 Making Marksheet and displaying persentage</h2>
+    <p id="task-8.1"></p>
+    <p id="task-8.2"></p>
+    <p id="task-8.3"></p>
+
+        <h2> Task 9 Currency converting</h2>
+        <p id="task-9.1"></p>
+        <p id="task-9.2"></p>
+        <p id="task-9.3"></p>
+
+
+
+
+
+
+
+
+
+    <script>
+        var a = 10;
+        var b = 4;
+        var c = a + b;
+        document.getElementById("task-1").innerHTML = "This is the result of third var in addition of 2 variables:- " + c;
+
+        var c = a * b;
+        document.getElementById("task-2").innerHTML = "This is the result of third var in Multiplation of two variables:- " + c;
+
+        var c = a / b;
+        document.getElementById("task-3").innerHTML = "This is the result of third var in Division between two variables:- " + c;
+
+        var c = a - b;
+        document.getElementById("task-4").innerHTML = "This is the result of third var in substraction of two variables:- " + c;
+
+        var c = a % b;
+        document.getElementById("task-5").innerHTML = "This is the result of third var of modules of two variables:- " + c;
+
+        var a = 0;
+        document.getElementById("task1-1").innerHTML = "This is the variable with the Null value:-   " + a;
+
+        var numberInitializing = 4;
+        document.getElementById("task1-2").innerHTML = "This is the Initial value:-   " + numberInitializing;
+
+        var incrementedValue = ++numberInitializing;
+        document.getElementById("task1-3").innerHTML = "This is the value after increment:-   " + incrementedValue;
+
+        var adding7ToVar = numberInitializing + 7;
+        document.getElementById("task1-4").innerHTML = "This is the value after adding 7 to the value:-   " + adding7ToVar;
+
+        var valueDecrement = --adding7ToVar;
+        document.getElementById("task1-5").innerHTML = "This is the value after Decrement:-   " + valueDecrement;
+
+        var remainDer = --adding7ToVar % 2;
+        document.getElementById("task1-6").innerHTML = "This is the Modules/remainder value:-   " + remainDer;
+
+        /*Ticket Calculating*/
+        var ticketCost = 600;
+        var purchasedTickets = 5;
+        document.getElementById("task-1.4").innerHTML = ticketCost * purchasedTickets;
+
+        // Writing Table using JS 
+        var tableOf = 6;
+        var multiplyBy1 = 1;
+        document.getElementById("tablep1").innerHTML = "6 * 1 = " + tableOf * multiplyBy1;
+
+        var multiplyBy2 = 2;
+        document.getElementById("tablep2").innerHTML = "6 * 2 = " + tableOf * multiplyBy2;
+
+        var multiplyBy3 = 3;
+        document.getElementById("tablep3").innerHTML = "6 * 3 = " + tableOf * multiplyBy3;
+        var multiplyBy4 = 4;
+        document.getElementById("tablep4").innerHTML = "6 * 4 = " + tableOf * multiplyBy4;
+        var multiplyBy5 = 5;
+        document.getElementById("tablep5").innerHTML = "6 * 5 = " + tableOf * multiplyBy5;
+        var multiplyBy6 = 6;
+        document.getElementById("tablep6").innerHTML = "6 * 6 = " + tableOf * multiplyBy6;
+        var multiplyBy7 = 7;
+        document.getElementById("tablep7").innerHTML = "6 * 7 = " + tableOf * multiplyBy7;
+        var multiplyBy8 = 8;
+        document.getElementById("tablep8").innerHTML = "6 * 8 = " + tableOf * multiplyBy8;
+        var multiplyBy9 = 9;
+        document.getElementById("tablep9").innerHTML = "6 * 9 = " + tableOf * multiplyBy9;
+        var multiplyBy10 = 10;
+        document.getElementById("tablep10").innerHTML = "6 * 10 = " + tableOf * multiplyBy10;
+
+        var item1Price = 50;
+        var item2Price = 80;
+        var quantityOfproduct1 = 4;
+        var quantityOfproduct2 = 2;
+        var deleiveryCharges = 200;
+        var firstPurgaseCost = item1Price * quantityOfproduct1;
+        var secondPurgaseCost = item2Price * quantityOfproduct2;
+        var totalCost = firstPurgaseCost + secondPurgaseCost + deleiveryCharges;
+
+        document.getElementById("task-7.1").innerHTML = "Your purchased item's price: " + item1Price;
+        document.getElementById("task-7.2").innerHTML = "Quantity of purchased items: " + quantityOfproduct1;
+        document.getElementById("task-7.3").innerHTML = "Quantity of purchased items: " + item2Price;
+        document.getElementById("task-7.4").innerHTML = "Quantity of purchased items: " + quantityOfproduct2;
+        document.getElementById("task-7.5").innerHTML = "Our deleivery Charges: " + deleiveryCharges;
+        document.getElementById("task-7.6").innerHTML = "Total cost: " + totalCost;
+
+        var totalMarks = 1200;
+        var obtainedMarks = 940;
+        var persentage = (obtainedMarks / totalMarks) * 100;
+
+        document.getElementById("task-8.1").innerHTML = "Total Marks: " + totalMarks;
+        document.getElementById("task-8.2").innerHTML = "Total Obtained Marks: " + obtainedMarks;
+        document.getElementById("task-8.3").innerHTML = "Percentage: " + persentage;
+
+        var usdCurrency = 10;
+        var riyal = 30;
+        var usdToPkr = 104;
+        var riyalToPkr = 50;
+        var totalPkr = (usdCurrency * usdToPkr) + (riyal * riyalToPkr);
+
+        document.getElementById("task-9.1").innerHTML = "USD Currency: " + usdCurrency;
+        document.getElementById("task-9.2").innerHTML = "Saudi currency: " + riyal;
+        document.getElementById("task-9.3").innerHTML = "Total currency in PKR: " + totalPkr;
+
+    </script>
+</body>
+
+</html>
